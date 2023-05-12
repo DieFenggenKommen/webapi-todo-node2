@@ -1,17 +1,20 @@
-# Assignment_Docker_03
+# Aufgabe 5: Bind-Mount zur Weiterentwicklung der API
 
-Hier ist eine einfache Web-API, die mit NodeJS und Express entwickelt worden ist.
+Hier ist eine einfache NodeJS Web-API, die du schon kennst.
 Sie verwendet keine Datenbank, sondern speichert die Daten in einer Liste im Memory ab.
+Wir würden gerne diese API weiterentwickeln und testen, ohne bei jeder Änderung den Container neu erstellen zu müssen.
 
 ## Lernziele
-- Erstellen eines Dockerfiles, für eine NodeJS Applikation.
-- Erfahrungen sammeln mit dem Caching von Layern in Docker und wie man dieses nutzen kann um die Erstellung des Images zu optimieren.
+- Verwendung von Bind-Mount zur automatischen Synchronisation des Sourcecode zwichen Lapi und Container.
+- Synchronisation von Unterverzeichnissen (node_modules) unterbinden.
+- Verwendung von nodemon um Änderungen sofort aktiv zu machen.
 
 ## Aufgabe
-- Erstelle ein Dockerfile für diese Applikation.
+- Erstelle ein Dockerfile für diese Applikation (Der Command von CMD ändert sich zu npm run dev).
 - Nutze dabei die Eigenschaft von Docker Layers zu cachen, um nicht bei jeder Änderung im Code die Installation von den Node-Modulen zu wiederholen.
-- Generiere ein Docker-Image und lade dieses auf dein Docker-Hub Repository hoch.
-- Gib den Docker-Befehl an, der verwendet werden kann um dein Image herunterzuladen und als Container auszuführen.
+- Erstelle ein Bind-Mount um den Sourcecode automatisch zu sychronisieren.
+- Lade das fertige Image wiederum auf Docker-Hub hoch.
+- Wie lautet der Docker-Command mit dem ich dein Image auf meinem Rechner laufen lassen kann
 
 
 ### Antwort
